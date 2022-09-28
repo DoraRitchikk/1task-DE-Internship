@@ -19,3 +19,4 @@ CREATE table students
 	sex char(1) not null,
 	CONSTRAINT CHK_Sex CHECK ((sex = 'M') OR (sex = 'F'))
 );
+CREATE index #ROOMIn on rooms(name)
